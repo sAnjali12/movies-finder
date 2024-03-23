@@ -1,0 +1,290 @@
+[
+  {
+    "bollywood": [
+      {
+        "id": "1",
+        "title": "Radhe: Your Most Wanted Bhai",
+        "image": "assets/images/radhe.jpeg",
+        "duration": "1 hour 55 minutes",
+        "year": 2021,
+        "language": "Hindi",
+        "description": "An action-packed thriller about a cop who takes on the drug mafia to rid the city of crime.",
+        "Rated": "PG-13",
+        "Released": "13 May 2021",
+        "Genres": ["Action", "Crime", "Thriller"],
+        "Country": "India",
+        "trailer": "https://www.youtube.com/watch?v=n5MVzhwupBY&pp=ygUkcmFkaGUgeW91ciBtb3N0IHdhbnRlZCBiaGFpIHRyYWlsZXIg"
+      },
+      {
+        "id": "2",
+        "title": "Shershaah",
+        "image": "assets/images/shershah.jpeg",
+        "duration": "2 hours 15 minutes",
+        "year": 2021,
+        "language": "Hindi",
+        "description": "A biographical war film based on the life of Captain Vikram Batra, an Indian Army officer who was martyred in the Kargil War.",
+        "Rated": "PG-13",
+        "Released": "12 August 2021",
+        "Genres": ["Action", "Biography", "Drama"],
+        "Country": "India",
+        "trailer": "https://www.youtube.com/watch?v=Kw1XrfZfs7M&pp=ygURc2hlcnNoYWFoIHRyYWlsZXI%3D"
+      },
+      {
+        "id": "3",
+        "title": "Bell Bottom",
+        "image": "assets/images/bell-bottom.jpeg",
+        "duration": "2 hours 3 minutes",
+        "year": 2021,
+        "language": "Hindi",
+        "description": "A spy thriller set in the 1980s, revolving around a covert operation to rescue hostages from a hijacked plane.",
+        "Rated": "PG-13",
+        "Released": "19 August 2021",
+        "Genres": ["Action", "Thriller"],
+        "Country": "India",
+        "trailer": "https://www.youtube.com/watch?v=A6eZ49O67YQ&pp=ygUTQmVsbCBCb3R0b20gdHJhaWxlcg%3D%3D"
+      },
+      {
+        "id": "4",
+        "title": "Sooryavanshi",
+        "image": "assets/images/shuryvanshi.jpeg",
+        "duration": "2 hours 35 minutes",
+        "year": 2021,
+        "language": "Hindi",
+        "description": "An action-packed film about an anti-terrorism squad officer who must stop a terrorist attack in Mumbai.",
+        "Rated": "PG-13",
+        "Released": "5 November 2021",
+        "Genres": ["Action", "Drama", "Thriller"],
+        "Country": "India"
+      },
+      {
+        "id": "5",
+        "title": "Animal",
+        "image": "assets/images/animal.jpg",
+        "duration": "2 hours 10 minutes",
+        "year": 2023,
+        "language": "Hindi",
+        "description": "A suspense thriller about a group of friends who encounter a mysterious creature during their wilderness camping trip.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Horror", "Mystery", "Thriller"],
+        "Country": "India"
+      },
+      {
+        "id": "6",
+        "title": "Leo",
+        "image": "assets/images/leo-poster.jpg",
+        "duration": "1 hour 50 minutes",
+        "year": 2024,
+        "language": "Hindi",
+        "description": "A heartwarming family drama about a young boy named Leo who embarks on a journey of self-discovery after finding a mysterious treasure map.",
+        "Rated": "PG",
+        "Released": "TBA",
+        "Genres": ["Adventure", "Drama", "Family"],
+        "Country": "India"
+      },
+      {
+        "id": "7",
+        "title": "Brahmastra",
+        "image": "assets/images/Brahmastra.jpeg",
+        "duration": "2 hours 45 minutes",
+        "year": 2023,
+        "language": "Hindi",
+        "description": "A fantasy adventure film directed by Ayan Mukerji, featuring Ranbir Kapoor and Alia Bhatt in lead roles.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Adventure", "Fantasy"],
+        "Country": "India"
+      },
+      {
+        "id": "8",
+        "title": "Dhoom 4",
+        "image": "assets/images/Dhoom.jpeg",
+        "duration": "2 hours 20 minutes",
+        "year": 2023,
+        "language": "Hindi",
+        "description": "The fourth installment in the action-packed Dhoom franchise, featuring high-speed bike chases and thrilling heists.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Thriller"],
+        "Country": "India"
+      },
+      {
+        "id": "9",
+        "title": "Lal Singh Chaddha",
+        "image": "assets/images/Lal-Singh.jpeg",
+        "duration": "3 hours 10 minutes",
+        "year": 2023,
+        "language": "Hindi",
+        "description": "An adaptation of the Hollywood film Forrest Gump, starring Aamir Khan in the titular role.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Comedy", "Drama", "Romance"],
+        "Country": "India"
+      },
+      {
+        "id": "10",
+        "title": "Dhamaka",
+        "image": "assets/images/Dhamaka.jpg",
+        "duration": "2 hours 10 minutes",
+        "year": 2024,
+        "language": "Hindi",
+        "description": "A thriller film starring Kartik Aaryan as a news anchor who gets embroiled in a hostage situation during a live broadcast.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Thriller"],
+        "Country": "India"
+      },
+      {
+        "id": "11",
+        "title": "Pathaan",
+        "image": "assets/images/pathan.jpg",
+        "duration": "2 hours 45 minutes",
+        "year": 2024,
+        "language": "Hindi",
+        "description": "An action-packed film featuring Shah Rukh Khan as a spy, marking his comeback to the big screen after a hiatus.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Thriller"],
+        "Country": "India"
+      },
+      {
+        "id": "12",
+        "title": "Bachchan Pandey",
+        "image": "assets/images/Bachchan-Pandey.jpeg",
+        "duration": "2 hours 30 minutes",
+        "year": 2024,
+        "language": "Hindi",
+        "description": "A comedy-action film starring Akshay Kumar as a gangster who aspires to become an actor.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Comedy"],
+        "Country": "India"
+      },
+      {
+        "id": "13",
+        "title": "Adipurush",
+        "image": "assets/images/adhipurush.jpeg",
+        "duration": "3 hours",
+        "year": 2024,
+        "language": "Hindi",
+        "description": "An epic mythological film based on the Hindu epic Ramayana, starring Prabhas as Lord Rama.",
+        "Rated": "PG-13",
+        "Released": "TBA",
+        "Genres": ["Action", "Adventure", "Drama"],
+        "Country": "India"
+      }
+    ]
+  }
+  ,
+  {
+    "hollywood": [
+      {
+        "id": "1",
+        "title": "The Batman",
+        "image": "../../../assets/images/batman.jpeg",
+        "duration": "2 hours 55 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "A dark and gritty reboot of the Batman franchise, directed by Matt Reeves, featuring Robert Pattinson as the titular character.",
+        "Rated": "PG-13",
+        "Released": "March 4, 2022",
+        "Genres": ["Action", "Crime", "Drama"],
+        "Country": "USA"
+      },
+      {
+        "id": "2",
+        "title": "Avatar 2",
+        "image": "../../../assets/images/Avatar2.jpeg",
+        "duration": "3 hours 10 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "The highly anticipated sequel to James Cameron's groundbreaking film, Avatar, continuing the story of the Na'vi and their struggle against human exploitation on Pandora.",
+        "Rated": "PG-13",
+        "Released": "December 16, 2022",
+        "Genres": ["Action", "Adventure", "Fantasy"],
+        "Country": "USA"
+      },
+      {
+        "id": "3",
+        "title": "Jurassic World: Dominion",
+        "image": "../../../assets/images/Jurassic.jpeg",
+        "duration": "2 hours 25 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "The latest installment in the Jurassic Park franchise, directed by Colin Trevorrow, featuring the return of iconic dinosaurs and characters from the original films.",
+        "Rated": "PG-13",
+        "Released": "June 10, 2022",
+        "Genres": ["Action", "Adventure", "Sci-Fi"],
+        "Country": "USA"
+      },
+      {
+        "id": "4",
+        "title": "Black Panther: Wakanda Forever",
+        "image": "../../../assets/images/Black-Panther.jpeg",
+        "duration": "2 hours 20 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "A sequel to the highly successful Black Panther film, exploring the legacy of T'Challa and the future of Wakanda following the passing of Chadwick Boseman.",
+        "Rated": "PG-13",
+        "Released": "November 11, 2022",
+        "Genres": ["Action", "Adventure", "Sci-Fi"],
+        "Country": "USA"
+      },
+      {
+        "id": "5",
+        "title": "Thor: Love and Thunder",
+        "image": "../../../assets/images/thor.jpeg",
+        "duration": "2 hours 15 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "The fourth installment in the Thor series, directed by Taika Waititi, featuring Chris Hemsworth as Thor and Natalie Portman as the Mighty Thor.",
+        "Rated": "PG-13",
+        "Released": "May 6, 2022",
+        "Genres": ["Action", "Adventure", "Comedy"],
+        "Country": "USA"
+      },
+      {
+        "id": "6",
+        "title": "Mission: Impossible 8",
+        "image": "../../../assets/images/Mission.jpeg",
+        "duration": "2 hours 30 minutes",
+        "year": "2023",
+        "language": "English",
+        "description": "The eighth installment in the Mission: Impossible franchise, starring Tom Cruise as Ethan Hunt, continuing his adrenaline-fueled missions.",
+        "Rated": "PG-13",
+        "Released": "July 14, 2023",
+        "Genres": ["Action", "Adventure", "Thriller"],
+        "Country": "USA"
+      },
+      {
+        "id": "7",
+        "title": "Fantastic Beasts: The Secrets of Dumbledore",
+        "image": "../../../assets/images/Fantastic.jpeg",
+        "duration": "2 hours 10 minutes",
+        "year": "2022",
+        "language": "English",
+        "description": "The third installment in the Fantastic Beasts series, following the adventures of Newt Scamander and exploring the early life of Albus Dumbledore.",
+        "Rated": "PG-13",
+        "Released": "April 15, 2022",
+        "Genres": ["Adventure", "Family", "Fantasy"],
+        "Country": "UK"
+      },
+      {
+        "id": "8",
+        "title": "Spider-Man: No Way Home",
+        "image": "../../../assets/images/Spider-Man.jpeg",
+        "duration": "2 hours 28 minutes",
+        "year": "2021",
+        "language": "English",
+        "description": "The latest Spider-Man film, directed by Jon Watts, featuring Tom Holland as Peter Parker and exploring the multiverse with appearances from past Spider-Man actors.",
+        "Rated": "PG-13",
+        "Released": "December 17, 2021",
+        "Genres": ["Action", "Adventure", "Fantasy"],
+        "Country": "USA"
+      }
+    ]
+  }
+  
+ 
+  ]
+  

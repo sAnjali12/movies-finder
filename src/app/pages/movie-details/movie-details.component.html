@@ -1,0 +1,132 @@
+<nav id="desktop-nav">
+      <div class="main-nav">
+        <div class="nav-left">
+          <div class="navbar-brand">
+            <a href="/movies">Movies</a>
+          </div>
+        </div>
+           <div class="d-flex align-items-center p-2 search-nav-group">
+            <div class="mr-3 p-2">
+                <select class="rounded border px-3 py-1" #selectedLang (change)="switchLang(selectedLang.value)">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
+        </div>
+      </div>
+  </nav>
+    <div class="contain mt-5 bg-black">
+      <div class="row p-5">
+          <div class="col-lg-2" *ngIf="getMovieDetailResult.poster_path">
+                  <img 
+                  src="https://image.tmdb.org/t/p/original/{{ getMovieDetailResult.poster_path }}" 
+                  >
+          </div>
+          <div class="col-lg-10 mt-5 p-4">
+                  <h1 class="mt-2 mb-2">{{getMovieDetailResult.original_title}}</h1>
+                  <p class="mt-3 mb-3">{{getMovieDetailResult.overview}}</p>
+                  <a class="btn btn-md" href="https://www.themoviedb.org/video/play?key={{getMovieVideoResult}}" 
+                  target="_blank"
+                  >watch trailer</a>
+                  <div class="btn btn-md book-button" (click)="bookMovieSeat()"
+                  >Book Ticket</div>
+
+                  <div class="mt-4 p-4">
+                      <h2 class="text-white">Top Cast</h2>
+                      <div class="row">
+                      <div class="col-lg-4" *ngFor="let c of getMovieCastResult">
+                          <div class="row mt-2 mb-2">
+                              <div class="col-lg-2" *ngIf="c.profile_path">
+                                  <img 
+                                  src="https://image.tmdb.org/t/p/original/{{ c.profile_path}}" 
+                                  >
+                              </div>
+                              <div class="col-lg-10">
+                                  <h3 class="text-white">{{c.original_name}}</h3>
+                                  <p class="text-white">{{c.character}}</p>
+                              </div>
+                          </div>
+
+                          </div>
+
+                      </div>
+                  </div>
+          </div>
+      </div>
+</div>
+<div class="footer">
+  <p>&copy; 2024 Your Company. All rights reserved.</p>
+</div>
+
+    <!-- <section id="trailer">
+        <div class="container">
+          <iframe width="100%" height="400" [src]="sanitizeUrl(movieDetails.trailer)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+      
+
+    <section id="small-about" class="section-padding movie-details-default-section">
+      <div class="container">
+        <div class="section-left">
+          <div class="movie-details-section-header">
+            <h2>{{'Brief Description' | translate}}</h2>
+          </div>
+        </div>
+        <div class="section-center">
+          <p>{{movieDetails.description}}</p>
+        </div>
+        <div class="section-right">
+          <div class="movie-details-utils">
+            <ul>
+              <li>
+                <p (click)="bookMovieSeat()" class="watch-button">{{'Book Now' | translate}}</p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="big-about" class="section-padding movie-details-default-section">
+      <div class="container">
+        <div class="section-left">
+          <div class="movie-details-section-header">
+            <h2>{{'About us' | translate}}</h2>
+          </div>
+        </div>
+        <div class="section-right">
+          <div class="movie-details-container">
+            <ul>
+              <li>
+                <h5>{{'Rated' | translate}}</h5>
+                <p>{{movieDetails.Rated}}</p>
+              </li>
+              <li>
+                <h5>{{'Released' | translate}}</h5>
+                <p>{{movieDetails.Released}}</p>
+              </li>
+              <li>
+                <h5>{{'Genres' | translate}}</h5>
+                <p>
+                    {{movieDetails.Genres}}
+                </p>
+              </li>
+              <li>
+                <h5>{{'Country' | translate}}</h5>
+                <p>{{movieDetails.Country}}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="movie-plot-container">
+            <p>
+              A film – also called a movie, motion picture, moving picture, picture, photoplay or (slang) flick – is a work of visual art that simulates experiences and otherwise communicates ideas, stories, perceptions, feelings, beauty, or atmosphere through the use of moving images
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> -->
+
+
+ 

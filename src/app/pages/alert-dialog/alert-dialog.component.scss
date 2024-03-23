@@ -1,0 +1,48 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-box {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgb(38 34 34);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 25vw;
+  box-shadow: 0,0,10px;
+}
+
+.dialog-box{
+  text-align: center;
+}
+
+.bg-red {
+  background: var(--primary-color);
+  margin-top: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+.dialog-box.fade-in {
+  animation: fadeIn 300ms ease-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

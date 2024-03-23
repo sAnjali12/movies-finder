@@ -1,0 +1,27 @@
+.example-card {
+    max-width: 400px;
+    max-height: 700px;
+    background-color: black;
+    color: aliceblue;
+  }
+  
+.example-header-image {
+    background-size: cover;
+    align-content: center;
+    margin-left: 60px;
+
+}
+.card-title{
+  text-align: center;
+  align-content: center;
+}
+
+.ok-botton{
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 40px;
+  margin-left: 150px;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  cursor: pointer;
+}

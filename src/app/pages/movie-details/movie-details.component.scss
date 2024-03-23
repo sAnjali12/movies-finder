@@ -1,0 +1,100 @@
+/*Nav*/
+nav {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: var(--background-color-black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.contain{
+  width: 100%;
+  padding-top: 4vw;
+  position: relative;
+
+
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#desktop-nav .nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand a {
+    color: #bd1e1e;
+    margin-left: 5vw;
+    background-color: transparent;
+    font-family: "Srisakdi", cursive;
+    font-weight: bolder;
+    font-size: 2.4em;
+
+}
+
+
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 1vw;
+  box-shadow: 0 0 5vw;
+}
+
+h1
+{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+p{
+  color: #ffffff;
+}
+
+a{
+  background-color: #E50914;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: #E50914;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.book-button {
+  margin-left: .30vw;
+  border-radius: 9px;
+  background-color: #E50914;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;;
+}
+
+.book-button:hover{
+  background-color: #E50914;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

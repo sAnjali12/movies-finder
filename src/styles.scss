@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body {
+    --primary-color:   #e50914;;
+    --text-color-white: #fff;
+    --text-color-dark: #000;
+    --text-color-grey: #a0afbb;
+    --background-color-grey: #f0f0f0;
+    --background-color-white: #fff;
+    --background-color-dark: #333;
+    --background-color-black: #000;
+    --transition-duration: 0.3s;
+    --default-trans: all 0.3s ease;
+  
+    font-family: "Open Sans", sans-serif;
+  }
+  
+body.light {
+    --primary-color: #f9735b;
+    --text-color-white: #000;
+    --text-color-dark: #fff;
+    --text-color-grey: #a0afbb;
+    --background-color-grey: #f0f0f0;
+    --background-color-white: #000;
+    --background-color-dark: #fff;
+    --background-color-black: #f0f0f0;
+  }
+
+  .mat-dialog-container {
+    background-color: transparent; /* Replace with your desired background color */
+  }
+  
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

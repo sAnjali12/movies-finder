@@ -1,0 +1,91 @@
+<div class="overlay" *ngIf="isDialogOpen"></div>
+<app-alert-dialog *ngIf="isDialogOpen" [errorMessage]="errorMessage" (closeDialogEvent)="closeDialog()"></app-alert-dialog>
+<div class="login-container" [ngClass]="{'disabled': isDialogOpen}">
+  <div class="header-tabs d-flex justify-content-between align-items-center">
+    <h1 class="p-4 text-white">Movies</h1>
+    <div class="d-flex align-items-center p-3">
+      <div class="mr-3 p-2">
+        <select class="rounded border px-3 py-1" #selectedLang (change)="switchLang(selectedLang.value)">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+        </select>
+      </div>
+      <div *ngIf="signup" class="bg-red px-4 py-1 rounded text-white" (click)="changeAuth('signup')">{{'Sign In' | translate}}</div>
+      <div *ngIf="login" class="bg-red px-4 py-1 rounded text-white" (click)="changeAuth('login')">{{'Sign UP' | translate}}</div>
+    </div>
+
+</div>
+  <div class="container-card">
+    <div class="login-page">
+      <div class="form" *ngIf="login">
+        <h2>{{'Sign In' | translate}}</h2>
+        <form (ngSubmit)="submitLoginForm()" [formGroup]="loginForm">
+          <input type="text" placeholder="{{'username' | translate}}" formControlName="username">
+          <div *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].touched">
+            <p class="error-message">Username is required</p>
+          </div>
+          <input type="password" placeholder="{{'password' | translate}}" formControlName="password">
+          <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+            <p class="error-message">Password is required</p>
+          </div>
+          <button type="submit">{{'Sign In' | translate}}</button>
+        </form>
+        <p class="message">{{'notRegistered' | translate}}<span (click)="changeAuth('signup')">{{'createAccount' | translate}}</span></p>
+        <p class="message">{{'forgotPassword' | translate}} <span (click)="resetPassword()">{{'clickHere' | translate}}</span></p>
+      </div>
+      <div class="form" *ngIf="signup">
+        <h2>{{'Sign Up' | translate}}</h2>
+        <form (ngSubmit)="submitSignupForm()" [formGroup]="signupForm">
+          <input type="text" placeholder="{{'email' | translate}}" formControlName="email">
+          <div *ngIf="signupForm.controls['email'].invalid && signupForm.controls['email'].touched">
+            <p class="error-message">Valid email is required</p>
+          </div>
+          <input type="number" placeholder="{{'phoneNumber' | translate}}" formControlName="phoneNumber">
+          <input type="text" placeholder="{{'username' | translate}}" formControlName="username">
+          <div *ngIf="signupForm.controls['username'].invalid && signupForm.controls['username'].touched">
+            <p class="error-message">Username is required</p>
+          </div>
+          <input type="password" placeholder="{{'password' | translate}}" formControlName="password">
+          <div *ngIf="signupForm.controls['password'].invalid && signupForm.controls['password'].touched">
+            <p class="error-message">Password is required</p>
+          </div>
+          <button type="submit">{{'Sign Up' | translate}}</button>
+        </form>
+        <p class="message">{{'alreadyHaveAccount' | translate}} <span (click)="changeAuth('login')">{{'Sign In' | translate}}</span></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mt-1">
+    <div class="section1">
+      <div class="text justify-content-between align-items-center">
+        <h2>{{'enjoyOnTV' | translate}}</h2>
+        <p>{{'watchOn' | translate}}</p>
+      </div>
+      <div class="parent">
+        <img  class="image1" src="../../../assets/images/tv.jpg" alt="Your Image">
+        <img  class="image2"  src="../../../assets/images/H95B.gif">
+      </div>
+    </div>
+    <div class="section2 mt-1">
+      <div class="text">
+        <h2>{{'downloadShows' | translate}}</h2>
+        <!-- <p>{{'saveFavorites' | translate}}</p> -->
+      </div>
+      <div class="parent">
+        <img class="image1" style="width: 80%;" src="../../../assets/images/movie-mobile.png" alt="Your Image">
+        <img  class="image2" src="../../../assets/images/Downloads.gif">
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="footer">
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </div>
+</div>
+
+  
+  
+  

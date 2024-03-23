@@ -1,0 +1,180 @@
+<div class="movie-list">
+    <header class="top-menu">
+      <div class="centered-container top-menu-container">
+        <a href="#" class="logo-link">Movies</a>
+        <div class="d-flex align-items-center p-2 search-nav-group">
+            <div class="mr-3 p-2">
+              <select class="rounded border px-3 py-1" #selectedLang (change)="switchLang(selectedLang.value)">
+                <option value="en" [selected]="language === 'en'">English</option>
+                <option value="hi" [selected]="language === 'hi'">हिन्दी</option>
+              </select>
+            </div>
+            <div class="bg-red px-4 py-1 rounded text-white" (click)="logOut()">{{'Log Out' | translate}}</div>
+        </div>
+      </div>  
+    </header>
+    
+    <div class="contain-fluid">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" *ngFor="let b of bannerResult;let i=index"
+          [ngClass]="{active:i===1}">
+          <img src="https://image.tmdb.org/t/p/original/{{ b.backdrop_path }}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>{{b.original_title}}</h2>
+            <p>{{b.overview}}</p>
+          </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="contain mt-3 mb-5 p-4">
+
+      <!-- trending movies  -->
+      <div class="row">
+        <h5 class="section-header">Trending Movies</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container  *ngFor="let t of trendingMovieResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie-details',t.id]">
+          </ng-container>
+        </div>
+      
+    
+      </div>
+    
+      <!-- action movies  -->
+      <div class="row mt-4">
+        <h5 class="section-header">Action Movies</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let a of actionMovieResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie-details',a.id]">
+          </ng-container>
+    
+        </div>
+    
+      </div>
+
+      <!-- adventure movies  -->
+      <div class="row mt-4">
+        <h5 class="section-header">adventure Movies</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let a of adventureMovieResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie-details',a.id]">
+          </ng-container>
+    
+        </div>
+    
+      </div>
+    
+    
+      <!-- animation movies  -->
+      <div class="row mt-4">
+        <h5 class="section-header">Animation Movies</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let a of animationMovieResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ a.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie-details',a.id]">
+          </ng-container>
+    
+        </div>
+    
+      </div>
+    
+      <!-- comedy movies  -->
+      <div class="row mt-4">
+        <h5 class="section-header">Comedy Movies</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let c of comedyMovieResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ c.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie-details',c.id]">
+          </ng-container>
+    
+        </div>
+    
+      </div>
+    </div>
+    <!-- <aside class="additional-info">
+      <div class="centered-container _dotted">
+        <section class="section movie-similar"  >
+            <h2 class="section-header">Movies</h2>
+            <div class="movies">
+                <div class="movie-card" *ngFor="let movie of translatedMovies" >
+                   <div (click)="handleMovieCardClick(movie.id, 'bollywood')">
+                    <h3 class="movie-title hidden">{{movie.title | translate }}</h3>
+                    <img [src]="movie.image" [alt]="movie.title + ' poster'" class="movie-poster">
+                    <div class="movie-meta">
+                        <span class="movie-duration">{{movie.duration | translate}}</span>
+                        <span class="movie-year">{{movie.year | translate}}</span>
+                        <span class="movie-lang">{{movie.language | translate}}</span>
+                    </div>
+                    <div class="movie-description">
+                        <p class="movie-description-text">{{movie.description | translate}}</p>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+
+        <section class="section popular">
+          <h2 class="section-header">Hollywood movies</h2>
+          <div class="movies">
+            <div class="movie-card" *ngFor="let movie of hollywoodMovieList">
+              <div (click)="handleMovieCardClick(movie.id, 'hollywood')">{{movie.id}}
+                <h3 class="movie-title hidden">{{movie.title | translate }}</h3>
+              <img [src]="movie.image" [alt]="movie.title + ' poster'" class="movie-poster">
+              <div class="movie-meta">
+                  <span class="movie-duration">{{movie.duration | translate}}</span>
+                  <span class="movie-year">{{movie.year | translate}}</span>
+                  <span class="movie-lang">{{movie.language | translate}}</span>
+              </div>
+              <div class="movie-description">
+                  <p class="movie-description-text">{{movie.description | translate}}</p>
+              </div>
+              </div>
+           </div>
+        
+
+        
+          </div>
+        </section>
+      </div>  
+    </aside> -->
+    <footer class="footer">
+        <div class="centered-container">
+          <div class="sub-links">
+              <ul>
+                <li><a href="#">{{'Audio and Subtitles' | translate}}</a></li>
+                <li><a href="#">{{'Audio Description' | translate}}</a></li>
+                <li><a href="#">{{'Help Center' | translate}}</a></li>
+                <li><a href="#">{{'Gift Cards' | translate}}</a></li>
+                <li><a href="#">{{'Media Center' | translate}}</a></li>
+                <li><a href="#">{{'Investor Relations' | translate}}</a></li>
+                <li><a href="#">{{'Jobs' | translate}}</a></li>
+                <li><a href="#">{{'Terms of Use' | translate}}</a></li>
+                <li><a href="#">{{'Privacy' | translate}}</a></li>
+                <li><a href="#">{{'Legal Notices' | translate}}</a></li>
+                <li><a href="#">{{'Corporate Information' | translate}}</a></li>
+                <li><a href="#">{{'Contact Us' | translate}}</a></li>
+              </ul>
+            </div>
+        </div>
+      </footer>
+  
+</div>
+
+
+

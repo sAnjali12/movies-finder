@@ -1,0 +1,310 @@
+.movie-list{
+  background-color: rgb(0, 0, 0);
+}
+.carousel-inner
+{
+    height: 700px;
+}
+
+.carousel-inner .carousel-item img
+{
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-caption h2
+{
+    color: #E50914;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-caption p 
+{
+    color: #ffffff;
+}
+
+.contain{
+  background-color: black;
+  margin-left: 2vw;
+}
+.rowposter{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+
+
+.rowimg
+{
+  max-height: 100px;
+  object-fit: contain;
+  width: 100%;
+  box-sizing: content-box;
+  transition: transform 450ms;
+  margin-right: 7px;
+}
+
+.rowimg:hover
+{
+  transform: scale(1.09);
+  cursor: pointer;
+}
+
+.largeposter{
+  max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+  display: none;
+}
+
+.section-header {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+}
+
+.section-header::after {
+  content: "....";
+  position: relative;
+  top: -1px;
+  left: 7px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  color: #CC364E;
+}
+
+
+
+
+
+
+
+
+.bg-red {
+    background: var(--primary-color);
+    cursor: pointer;
+  }
+  
+  .sub-links ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .sub-links a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+  .sub-links a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+  
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.centered-container {
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.top-menu {
+  background-color: var( --background-color-black);
+  overflow: hidden;
+  padding-left: 40px;
+}
+
+.top-menu-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+}
+
+.top-menu-container::before {
+  content: "";
+  position: absolute;
+  width: 378px;
+  background-size: 347px 27px;
+  left: -378px;
+  top: 16px;
+  bottom: 16px;
+}
+
+.logo-link {
+  font-family: "Srisakdi", cursive;
+  font-weight: bolder;
+  font-size: 2.4em;
+  color: var(--primary-color);
+}
+
+.logo {
+  width: 222px;
+  height: 69px;
+}
+
+.search-nav-group {
+  margin-left: auto;
+ 
+}
+
+
+.additional-info {
+  position: relative;
+  background-color: var( --background-color-black);
+  padding: 30px 0;
+}
+
+.centered-container._dotted {
+  position: relative;
+}
+
+._dotted::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -50px;
+  bottom: -50px;
+  left: 30%;
+  // background: url("../../../assets/images/animal-poster.jpg") repeat-y right top;
+  background-size: 704px 27px;
+  z-index: 0;
+}
+
+.section {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.section + .section {
+  margin-top: 30px;
+}
+
+.movie-details-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #f1f1f1;
+}
+
+.movie-details-text + .movie-details-text {
+  margin-top: 7px;
+}
+
+.movie-details-highlight {
+  font-weight: 700;
+}
+
+.movie-details-highlight {
+  font-weight: 700;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Display 4 movie cards in one row */
+  gap: 20px; /* Add gap between movie cards */
+}
+
+.movie-card {
+  width: 100%; /* Ensure movie cards take up full width of grid cell */
+  margin-top: 5px;
+  color: #d1d1d1;
+  text-decoration: none;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+
+
+.movie-card:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  transform: scale(1.03);
+}
+
+.movie-card:not(:nth-of-type(4n+1)) {
+  margin-left: 40px;
+}
+
+.movie-poster {
+  width: 265px;
+  height: 148px;
+}
+
+.movie-meta {
+  margin-top: 9px;
+  font-size: 0;
+}
+
+.movie-meta span {
+  padding: 0 3px;
+  border: 1px solid currentColor;
+  font-size: 13px;
+}
+
+.movie-meta span + span {
+  margin-left: 5px;
+}
+
+.movie-lang {
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 0 7px 0 4px;
+}
+
+.movie-description {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;  
+  margin-top: 11px;
+}
+
+.movie-description-text + .movie-description-text {
+  margin-top: 15px;
+  // font-family:'Times New Roman', Times, serif;
+}
+
+/* footer */
+
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color:var( --background-color-black);
+  color: #FFFFFF;
+}
+
+/* Учебные стили */
+
+
+
+
+
+
+
+
+  
