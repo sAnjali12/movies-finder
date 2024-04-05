@@ -12,7 +12,7 @@ export class MoviesService {
 
   
   baseurl = "https://api.themoviedb.org/3";
-  apikey = "34bca6c54fec4427ee7c1dce64e1fa97";
+  apikey = "be46053f0ccc0c66c6c2b1663dc4e4b9";
 
 
   //bannerapidata

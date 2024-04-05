@@ -1,5 +1,5 @@
 {
-  "name": "movies",
+  "name": "movies-finder",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -35,6 +35,7 @@
     "@angular/cli": "~14.2.13",
     "@angular/compiler-cli": "^14.2.0",
     "@types/jasmine": "~4.0.0",
+    "angular-cli-ghpages": "^2.0.0-beta.2",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",

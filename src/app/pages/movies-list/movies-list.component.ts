@@ -144,7 +144,7 @@ images = [
   switchLang(lang: string){
     this.translate.use(lang); 
     localStorage.setItem('language', lang);
-    this.router.navigate(['/user']);
+    // this.router.navigate(['/user']);
   }
 
   logOut(){
