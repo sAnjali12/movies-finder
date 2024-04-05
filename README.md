@@ -29,3 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## APIs Key
 
 To get APis data you can use TMDB movies database (https://www.themoviedb.org/).
+
+## My project Live 
+
+https://sanjali12.github.io/movies-finder/
